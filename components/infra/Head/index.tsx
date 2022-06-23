@@ -25,6 +25,9 @@ const Navbar = (props: NavbarProps) => {
     function handleClick() {
         return alert("você fez um post!")
     }
+    function handleClick2() {
+        return alert("você fez um get")
+    }
   return (
         <Tabs variant='soft-rounded'>
             <TabList>
@@ -40,7 +43,7 @@ const Navbar = (props: NavbarProps) => {
             </TabPanel>         
             <TabPanel>          {/* key2 */}
                 <p>{props.key2content}</p>
-                <Button colorScheme={props.key2buttoncolor} onClick={handleClick}>{props.key2button}</Button>
+                <Button colorScheme={props.key2buttoncolor} onClick={handleClick2}>{props.key2button}</Button>
             </TabPanel>         
             <TabPanel>          {/* key3 */}
                 <p>{props.key3content}</p>
